@@ -1,0 +1,34 @@
+{
+	"folders": [
+		{
+			"path": "../../../../../Academic/MATH/python/BT Chuong 4"
+		},
+		{
+			"path": "../../../../../Academic/Python/PBL4"
+		},
+		{
+			"path": "../../../QuanLyNSPB"
+		},
+		{
+			"path": "../../../MVC-EXAMPLE"
+		},
+		{
+			"path": "../../../../../Academic/LTM/SelfLearningViews"
+		},
+		{
+			"path": "../../../QLNSPB-MVC"
+		},
+		{
+			"path": "../../../../../Eclipse Workspace/QuanLySV"
+		},
+		{
+			"path": "../../../../../Eclipse Workspace/test888"
+		},
+		{
+			"path": "../.."
+		}
+	],
+	"settings": {
+		"liveServer.settings.multiRootWorkspaceName": "SelfLearningViews"
+	}
+}

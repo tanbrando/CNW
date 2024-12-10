@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../static/css/main.css">
+    <title>Test666</title>
+</head>
+<body>
+    <h3>
+    <?php
+        session_start();
+        if (isset($_SESSION['user'])) {
+            $currentName = $_SESSION['user']->getFirstname().$_SESSION['user']->getLastname();
+            echo "Welcome, ". $currentName;
+        }
+    ?>
+    </h3>
+    <div class="toolbar">
+        <div>
+            <form action="" method="GET">
+                <input type="text" name="name" placeholder="Search...">
+                <button type="submit">Tìm</button>
+            </form>
+        </div>
+    </div>
+
+    <table class="table">
+        <thead>
+            <tr>
+                <th>First name</th>
+                <th>Last name</th>
+                <th>Role</th>
+                <th>Operation</th>
+            </tr>
+        </thead>
+        <tbody>
+            <?php
+                if (isset($userList)) {
+                    foreach ($userList as $user) {
+                        echo "<tr>";
+                        echo "<td>". $user->getFirstname(). "</td>";
+                        echo "<td>". $user->getLastname(). "</td>";
+                        echo "<td>". $user->getRoles(). "</td>";
+                        echo "<td><a href='UserController.php?action=update&username=". $user->getUsername(). "&name=".$name."'>Update</a> | <a href='UserController.php?action=delete&username=". $user->getUsername(). "&name=".$name."'>Delete</a> </td>";
+                        echo "</tr>";
+                    }
+                }
+            ?>
+    </table>
+</body>
+</html>
