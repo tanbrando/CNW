@@ -1,0 +1,146 @@
+* {
+    padding: 0;
+    margin: 0;
+    font-family:'Roboto',sans-serif;
+}
+
+.table {
+    border: solid 2px #000;
+    font-family: 'Roboto' ,sans-serif;
+}
+
+.table tr {
+    background-color: #f2f2f2;
+}
+
+.table tr:nth-child(even) {
+    background-color: #ffffff;
+}
+
+.table th, .table td {
+    padding: 15px;
+    text-align: left;
+    border-bottom: 1px solid #ddd;
+}
+
+.table caption {
+    font-weight:700;
+    font-size:20px;
+    margin-bottom: 20px;
+}
+
+.table button {
+    padding:10px 20px;
+    background-color:#9a9a9a;
+    color:#fff;
+    border:none;
+    border-radius:5px;
+    cursor:pointer;
+}
+
+.formBox {
+    width:400px;
+    margin:auto;
+    border-radius:10px;
+    padding:20px;
+    background-color:#f3f3f3;
+}
+
+.formBox .title {
+    text-align:center;
+    font-weight:700;
+    font-size:20px;
+    border-bottom:2px solid #ddd;
+}
+
+.inputGroup {
+    display:flex;
+    padding:10px;
+    justify-content:space-between;
+    align-items:center;
+}
+
+.inputGroup input, .inputGroup select {
+    padding:4px;
+    border-radius:5px;
+    border: 2px solid #ddd;
+}
+.inputGroup textarea {
+    padding:4px;
+    border-radius:5px;
+    border: 2px solid #ddd;
+    height: 80px;
+}
+
+
+.inputGroup--radio {
+    display:flex;
+    justify-content:space-between;
+    padding:10px;
+}
+.radioGroup {
+    display:flex;
+    align-items:center;
+}
+.inputGroup--btn {
+    display:flex;
+    justify-content:center;
+    padding:4px;
+}
+
+.inputGroup--btn button ,.inputGroup--btn input {
+    padding:4px 20px;
+    border-radius:5px;
+    margin:0 4px;
+    background-color:#ddd;
+    border:0;
+    font-weight:600;
+}
+.header {
+    position:fixed;
+    display:flex;
+    justify-content:space-between;
+    align-items: center;
+    height:100px;
+    width:100%;
+    box-sizing: border-box;
+    background-color:#ddd;
+    font-family:'Roboto',sans-serif;
+    padding:0 20px;
+}
+.logo {
+    text-align: center;
+}
+
+.header .navbar {
+    display: flex;
+    justify-content: space-between;
+    padding: 10px;
+}
+
+.navbar ul {
+    display: flex;
+    justify-content: space-between;
+    list-style-type: none;
+}
+
+
+.navbar ul li {
+    margin-left: 20px;
+}
+
+.navbar__item {
+    text-decoration:none;
+    color:inherit;
+    font-weight:500;
+}
+
+.navbar__item:hover {
+    background-color: #ccc;
+}
+
+.navbar__form {
+    display: flex;
+    align-items: center;
+    margin-left: 20px;
+}
